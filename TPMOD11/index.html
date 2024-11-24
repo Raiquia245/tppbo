@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> 
+    <title>Tugas Pendahuluan PBO Modul 11</title>
+</head>
+<body>
+    
+    <header><b>VALDEZ BENTIRAZ | 1301220276 | TP MOD 11</b></header>
+
+    
+    <div class="tab-content">
+        
+        <div class="container-left" id="boxContainer">
+            <div class="box">
+                gambar
+            </div>
+        </div>
+
+        
+        <div class="container-right">
+            <div class="container-tab">
+                <button class="tab-btn active" onclick="switchTab(this, 0)">TAB 1</button>
+                <button class="tab-btn" onclick="switchTab(this, 1)">TAB 2</button>
+            </div>
+            
+            <div class="container tab-panel active" id="tab1">
+                <input type="number" name="jumlahbox" id="input" placeholder="Masukkan jumlah box">
+                <button class="send-btn" onclick="createBoxes()">send</button>
+            </div>
+            
+            <div class="container tab-panel" id="tab2">
+                <input type="number" name="jumlahbox" placeholder="Masukkan jumlah box">
+                <button class="send-btn" onclick="createBoxes()">send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
